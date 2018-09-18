@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jasonngor.com.sustainabilitylifestylescorecard">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:roundIcon="@mipmap/logo_circle"
+        android:supportsRtl="true"
+        android:label="Sustainability Scorecard"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".LandingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity
+            android:name=".CommuteActivity"
+            android:label="COMMUTE"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".DashboardActivity"/>
+        <activity
+            android:name=".JournalActivity"
+            android:label="JOURNAL"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".DashboardActivity"/>
+        <activity
+            android:name=".HealthActivity"
+            android:label="HEALTH"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".DashboardActivity"/>
+        <activity
+            android:name=".NoteActivity"
+            android:label="JOURNAL ENTRY"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".DashboardActivity"/>
+        <activity
+            android:name=".WaterBillActivity"
+            android:label="WATER USAGE"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".DashboardActivity"/>
+        <activity
+            android:name=".ElectricityActivity"
+            android:label="ELECTRIC USAGE"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".DashboardActivity"/>
+        <activity
+            android:name=".ElectricityEntryActivity"
+            android:label="ELECTRIC ENTRY"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".ElectricityActivity"/>
+        <activity
+            android:name=".WaterBillEntryActivity"
+            android:label="WATER ENTRY"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".WaterBillActivity"/>
+        <activity
+            android:name=".CommuteEntryActivity"
+            android:label="COMMUTE ENTRY"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".CommuteActivity"/>
+        />
+        <activity
+            android:name=".DietActivity"
+            android:label="DIET"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".DashboardActivity"/>
+        <activity
+            android:name=".DietEntryActivity"
+            android:label="DIET ENTRY"
+            android:theme="@style/MyCustomTheme"
+            android:parentActivityName=".DietActivity"/>
+        <activity android:name=".SearchRecipeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".HeathActivity"></activity>
+    </application>
+
+</manifest>
